@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+body {
+  font-family: 'Noto Sans TC';
+  background: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%) no-repeat fixed;
+}
+
+/* line 11, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+h1 {
+  font-family: 'Montserrat';
+  letter-spacing: 8.75px;
+  text-align: center;
+}
+
+/* line 19, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 25, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+.section {
+  background-color: #fff;
+}
+
+/* line 29, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+button, input {
+  border: 0;
+}
+
+/* line 31, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+button:hover, input:hover {
+  background-color: #9F9A91;
+}
+
+/* line 34, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+button:active, input:active {
+  background-color: #b7b3ac;
+}
+
+/* line 40, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+.list-item {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px 0;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+/* line 46, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+.list-item .remove-btn {
+  margin-left: auto;
+  background-color: white;
+}
+
+/* line 49, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_base.scss */
+.list-item .remove-btn span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 1, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.d-flex {
+  display: flex;
+}
+
+/* line 5, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* line 9, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.justify-content-around {
+  justify-content: space-around;
+}
+
+/* line 25, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* line 30, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.fs-1 {
+  font-size: 14px;
+}
+
+/* line 33, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.fs-2 {
+  font-size: 16px;
+}
+
+/* line 36, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.fs-3 {
+  font-size: 32px;
+}
+
+/* line 39, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.fs-4 {
+  font-size: 48px;
+}
+
+/* line 45, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.lh-icon {
+  line-height: 40px;
+}
+
+/* line 48, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.lh-1 {
+  line-height: 1.25;
+}
+
+/* line 51, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.lh-2 {
+  line-height: 1.5;
+}
+
+/* line 54, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.lh-3 {
+  line-height: 1.75;
+}
+
+/* line 59, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.border-1 {
+  border-width: 0.0625rem;
+}
+
+/* line 62, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.border-2 {
+  border-width: 0.125rem;
+}
+
+/* line 65, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.border-1 {
+  border-width: 0.25rem;
+}
+
+/* line 70, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.radius-2 {
+  border-radius: 10px;
+}
+
+/* line 73, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.radius-1 {
+  border-radius: 8px;
+}
+
+/* line 80, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+/* line 83, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+/* line 86, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+/* line 89, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+/* line 92, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+/* line 95, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.mb-6 {
+  margin-bottom: 48px;
+}
+
+/* line 101, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-input {
+  padding: 12px;
+}
+
+/* line 104, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-1 {
+  padding: 8px 0;
+}
+
+/* line 107, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-2 {
+  padding: 16px 0;
+}
+
+/* line 110, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-3 {
+  padding: 24px 0;
+}
+
+/* line 113, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-4 {
+  padding: 32px 0;
+}
+
+/* line 116, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-5 {
+  padding: 40px 0;
+}
+
+/* line 119, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.py-6 {
+  padding: 48px 0;
+}
+
+/* line 125, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-1 {
+  padding-top: 8px;
+}
+
+/* line 128, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-2 {
+  padding-top: 16px;
+}
+
+/* line 131, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-3 {
+  padding-top: 24px;
+}
+
+/* line 134, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-4 {
+  padding-top: 32px;
+}
+
+/* line 137, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-5 {
+  padding-top: 40px;
+}
+
+/* line 140, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pt-6 {
+  padding-top: 48px;
+}
+
+/* line 146, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-1 {
+  padding-bottom: 8px;
+}
+
+/* line 149, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-2 {
+  padding-bottom: 16px;
+}
+
+/* line 152, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-3 {
+  padding-bottom: 24px;
+}
+
+/* line 155, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-4 {
+  padding-bottom: 32px;
+}
+
+/* line 158, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-5 {
+  padding-bottom: 40px;
+}
+
+/* line 161, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pb-6 {
+  padding-bottom: 48px;
+}
+
+/* line 167, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-1 {
+  padding-left: 8px;
+}
+
+/* line 170, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-2 {
+  padding-left: 16px;
+}
+
+/* line 173, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-3 {
+  padding-left: 24px;
+}
+
+/* line 176, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-4 {
+  padding-left: 32px;
+}
+
+/* line 179, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-5 {
+  padding-left: 40px;
+}
+
+/* line 182, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.ps-6 {
+  padding-left: 48px;
+}
+
+/* line 188, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-1 {
+  padding-right: 8px;
+}
+
+/* line 191, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-2 {
+  padding-right: 16px;
+}
+
+/* line 194, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-3 {
+  padding-right: 24px;
+}
+
+/* line 197, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-4 {
+  padding-right: 32px;
+}
+
+/* line 200, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-5 {
+  padding-right: 40px;
+}
+
+/* line 203, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_util.scss */
+.pe-6 {
+  padding-right: 48px;
+}
+
+/* line 1, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 7, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.tab-group {
+  display: flex;
+  justify-content: stretch;
+}
+
+/* line 10, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.tab-group .tab-item {
+  flex: 1;
+}
+
+/* line 12, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.tab-group .tab-item .tab-btn {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  border: 0;
+  color: #9F9A91;
+  background-color: #FFF;
+  line-height: 51.5px;
+}
+
+/* line 19, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.tab-group .tab-item .tab-btn:disabled {
+  color: #333333;
+  border-bottom: 2px solid #333333;
+}
+
+/* line 30, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.add {
+  position: relative;
+}
+
+/* line 32, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.add-input {
+  width: 100%;
+}
+
+/* line 35, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.add-btn {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 41, ../../../../../Users/sz/Desktop/2021-06 六角體驗/todolist/scss/scss/_component.scss */
+.add-btn span {
+  line-height: 40px;
+}
+
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,46 @@
+.container {
+  max-width: 500px;
+  margin:  0 auto;
+}
+
+
+.tab-group {
+  display: flex;
+  justify-content: stretch;
+  .tab-item {
+    flex: 1;
+  .tab-btn {
+    width: 100%;
+    border-radius: $radius-base $radius-base 0 0;
+    border: 0;
+    color: $secondary-light;
+    background-color: $white;
+    line-height: 51.5px;
+    &:disabled {
+      color: $secondary;
+      border-bottom: 2px solid $secondary;
+    }
+
+  }
+  }
+ 
+
+}
+
+.add {
+  position: relative;
+  &-input {
+    width: 100%;
+  }
+  &-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: $spacer-5;
+    height: $spacer-5;
+    span {
+      line-height: 40px;
+    }
+
+  }
+}

@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Noto Sans TC'; 
+  background: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%) no-repeat fixed;
+}
+
+
+h1 {
+  font-family:  'Montserrat';
+  // font-size: $font-size-xl;
+  // line-height: $line-height-lg;
+  letter-spacing: 8.75px;
+  text-align: center;
+}
+
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-md;
+}
+
+
+.section {
+  background-color: #fff;
+}
+
+button, input {
+  border: 0;
+  &:hover {
+    background-color: $secondary-light;
+  }
+  &:active {
+    background-color: lighten($secondary-light,10%);
+  }
+}
+
+
+.list-item {
+  font-size: $font-size-base;
+  line-height: $line-height-md;
+  padding: $spacer-2 0;
+  border-bottom:1px solid $border-secondary;
+  
+  .remove-btn {
+    margin-left: auto;
+    background-color:white;
+    span {
+      font-size: $font-size-base;
+      line-height: $line-height-md;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Web font: Montserrat, Noto Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+TC&display=swap" rel="stylesheet"> 
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  
+  <!-- style settings -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>TodoList</title>
+  <link rel="shortcut icon" type="image/svg" href="favicon.svg"/>
+</head>
+<body>
+  <h1 class="fs-4 lh-3">TODO LIST</h1>
+  <div class="container">
+    <div class="mb-1 add">
+      <input type="text" placeholder="新增代辦事項" class="radius-2 fs-2 lh-2 py-input add-input">
+      <button type="button" class="add-btn radius-1 "><span class="material-icons fs-3">
+        add
+        </span></button>
+    </div>
+    
+    <div class="section radius-2">
+      <!-- 分類標籤 -->
+      <ul class="tab-group mb-1">
+        <li class="tab-item">
+          <button class="tab-btn fs-1">全部</button>
+        </li>
+        <li class="tab-item">
+          <button class="tab-btn fs-1">待完成</button>
+        </li>
+        <li class="tab-item">
+          <button class="tab-btn fs-1">已完成</button>
+        </li>
+      </ul>
+      <!-- todo 清單 -->
+      <ul class="list mb-3">
+        <li class="list-item">
+          <input type="checkbox" name="done" class="checkbox">
+          等等要把 34 行開回來
+          <button>
+            <span class="material-icons delete">close</span>
+          </button>
+        </li>
+      </ul>
+      <!-- 共計＆清除 -->
+      <div class="d-flex justify-content-between">
+        <p><span class="undone-number"></span>個待完成項目</p>
+        <button class="remove-done">清除已完成項目</button>
+      </div>
+  
+    </div>
+    
+  
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
